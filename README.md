@@ -1,5 +1,7 @@
 # Smart Goal Planner
 
+#### Deployment Link: https://phase-2-code-challenge-git-main-immanuels-projects-326237c9.vercel.app/
+
 Smart Goal Planner is a web application that helps users set, track, and manage financial goals. Built with React and Vite for the frontend and json-server for the backend, it allows users to create goals, make deposits, track progress, and receive visual feedback on deadlines. The frontend is styled with pure CSS and deployed on Vercel, while the backend is deployed on Render.
 
 ## Features
