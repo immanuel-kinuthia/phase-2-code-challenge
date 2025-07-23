@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .overview-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.overview-item {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.overview-item-blue {
+  background-color: #e0f2fe;
+}
+
+.overview-item-green {
+  background-color: #dcfce7;
+}
+
+.overview-item-purple {
+  background-color: #f3e8ff;
+}
+
+.overview-item p:first-child {
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-blue {
+  background-color: #2563eb;
+}
+
+.button-blue:hover {
+  background-color: #1d4ed8;
+}
+
+.button-green {
+  background-color: #16a34a;
+}
+
+.button-green:hover {
+  background-color: #15803d;
+}
+
+.button-yellow {
+  background-color: #f59e0b;
+}
+
+.button-yellow:hover {
+  background-color: #d97706;
+}
+
+.button-red {
+  background-color: #dc2626;
+}
+
+.button-red:hover {
+  background-color: #b91c1c;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.goal-card {
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.goal-card-overdue {
+  background-color: #fee2e2;
+}
+
+.goal-card-near-deadline {
+  background-color: #fef3c7;
+}
+
+.goal-card-completed {
+  background-color: #dcfce7;
+}
+
+.goal-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.goal-card p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.status-overdue {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.status-near-deadline {
+  color: #d97706;
+  font-weight: bold;
+}
+
+.status-completed {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background-color: #2563eb;
+  border-radius: 9999px;
+  transition: width 0.3s ease-in-out;
+}
