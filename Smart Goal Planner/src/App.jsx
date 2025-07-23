@@ -4,7 +4,7 @@ import GoalForm from './components/GoalForm.jsx';
 import DepositForm from './components/DepositForm.jsx';
 import GoalCard from './components/GoalCard.jsx';
 
-const API_URL = 'http://localhost:3000/goals';
+const API_URL = 'https://phase-2-code-challenge-jyi6.onrender.com';
 
 function App() {
   const [goals, setGoals] = useState([]);
